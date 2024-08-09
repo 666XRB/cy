@@ -28,13 +28,15 @@
         .week5 { background-color: #cceeff; }
         .week6 { background-color: #e0ccff; }
         .week7 { background-color: #ffccf2; }
+        .week8 { background-color: #f9c2ff; }
+        .week9 { background-color: #ffb3e6; }
         input[type="checkbox"] {
             transform: scale(1.2);
         }
     </style>
 </head>
 <body>
-    <h1>药物递减日历</h1>
+    <h1>药历</h1>
     <table>
         <tr>
             <th>日期</th>
@@ -43,99 +45,106 @@
         </tr>
 
         <!-- Week 1: 2024.08.07 - 2024.08.13 -->
-        <tr class="week1"><td>2024.08.07</td><td>7</td><td><input type="checkbox" id="day-20240807"></td></tr>
-        <tr class="week1"><td>2024.08.08</td><td>7</td><td><input type="checkbox" id="day-20240808"></td></tr>
-        <tr class="week1"><td>2024.08.09</td><td>7</td><td><input type="checkbox" id="day-20240809"></td></tr>
-        <tr class="week1"><td>2024.08.10</td><td>7</td><td><input type="checkbox" id="day-20240810"></td></tr>
-        <tr class="week1"><td>2024.08.11</td><td>7</td><td><input type="checkbox" id="day-20240811"></td></tr>
-        <tr class="week1"><td>2024.08.12</td><td>7</td><td><input type="checkbox" id="day-20240812"></td></tr>
-        <tr class="week1"><td>2024.08.13</td><td>7</td><td><input type="checkbox" id="day-20240813"></td></tr>
+        <tr class="week1"><td>2024.08.07</td><td>8</td><td><input type="checkbox" id="day-20240807"></td></tr>
+        <tr class="week1"><td>2024.08.08</td><td>8</td><td><input type="checkbox" id="day-20240808"></td></tr>
+        <tr class="week1"><td>2024.08.09</td><td>8</td><td><input type="checkbox" id="day-20240809"></td></tr>
+        <tr class="week1"><td>2024.08.10</td><td>8</td><td><input type="checkbox" id="day-20240810"></td></tr>
+        <tr class="week1"><td>2024.08.11</td><td>8</td><td><input type="checkbox" id="day-20240811"></td></tr>
+        <tr class="week1"><td>2024.08.12</td><td>8</td><td><input type="checkbox" id="day-20240812"></td></tr>
+        <tr class="week1"><td>2024.08.13</td><td>8</td><td><input type="checkbox" id="day-20240813"></td></tr>
 
         <!-- Week 2: 2024.08.14 - 2024.08.20 -->
-        <tr class="week2"><td>2024.08.14</td><td>6</td><td><input type="checkbox" id="day-20240814"></td></tr>
-        <tr class="week2"><td>2024.08.15</td><td>6</td><td><input type="checkbox" id="day-20240815"></td></tr>
-        <tr class="week2"><td>2024.08.16</td><td>6</td><td><input type="checkbox" id="day-20240816"></td></tr>
-        <tr class="week2"><td>2024.08.17</td><td>6</td><td><input type="checkbox" id="day-20240817"></td></tr>
-        <tr class="week2"><td>2024.08.18</td><td>6</td><td><input type="checkbox" id="day-20240818"></td></tr>
-        <tr class="week2"><td>2024.08.19</td><td>6</td><td><input type="checkbox" id="day-20240819"></td></tr>
-        <tr class="week2"><td>2024.08.20</td><td>6</td><td><input type="checkbox" id="day-20240820"></td></tr>
+        <tr class="week2"><td>2024.08.14</td><td>7</td><td><input type="checkbox" id="day-20240814"></td></tr>
+        <tr class="week2"><td>2024.08.15</td><td>7</td><td><input type="checkbox" id="day-20240815"></td></tr>
+        <tr class="week2"><td>2024.08.16</td><td>7</td><td><input type="checkbox" id="day-20240816"></td></tr>
+        <tr class="week2"><td>2024.08.17</td><td>7</td><td><input type="checkbox" id="day-20240817"></td></tr>
+        <tr class="week2"><td>2024.08.18</td><td>7</td><td><input type="checkbox" id="day-20240818"></td></tr>
+        <tr class="week2"><td>2024.08.19</td><td>7</td><td><input type="checkbox" id="day-20240819"></td></tr>
+        <tr class="week2"><td>2024.08.20</td><td>7</td><td><input type="checkbox" id="day-20240820"></td></tr>
 
         <!-- Week 3: 2024.08.21 - 2024.08.27 -->
-        <tr class="week3"><td>2024.08.21</td><td>5</td><td><input type="checkbox" id="day-20240821"></td></tr>
-        <tr class="week3"><td>2024.08.22</td><td>5</td><td><input type="checkbox" id="day-20240822"></td></tr>
-        <tr class="week3"><td>2024.08.23</td><td>5</td><td><input type="checkbox" id="day-20240823"></td></tr>
-        <tr class="week3"><td>2024.08.24</td><td>5</td><td><input type="checkbox" id="day-20240824"></td></tr>
-        <tr class="week3"><td>2024.08.25</td><td>5</td><td><input type="checkbox" id="day-20240825"></td></tr>
-        <tr class="week3"><td>2024.08.26</td><td>5</td><td><input type="checkbox" id="day-20240826"></td></tr>
-        <tr class="week3"><td>2024.08.27</td><td>5</td><td><input type="checkbox" id="day-20240827"></td></tr>
+        <tr class="week3"><td>2024.08.21</td><td>6</td><td><input type="checkbox" id="day-20240821"></td></tr>
+        <tr class="week3"><td>2024.08.22</td><td>6</td><td><input type="checkbox" id="day-20240822"></td></tr>
+        <tr class="week3"><td>2024.08.23</td><td>6</td><td><input type="checkbox" id="day-20240823"></td></tr>
+        <tr class="week3"><td>2024.08.24</td><td>6</td><td><input type="checkbox" id="day-20240824"></td></tr>
+        <tr class="week3"><td>2024.08.25</td><td>6</td><td><input type="checkbox" id="day-20240825"></td></tr>
+        <tr class="week3"><td>2024.08.26</td><td>6</td><td><input type="checkbox" id="day-20240826"></td></tr>
+        <tr class="week3"><td>2024.08.27</td><td>6</td><td><input type="checkbox" id="day-20240827"></td></tr>
 
         <!-- Week 4: 2024.08.28 - 2024.09.03 -->
-        <tr class="week4"><td>2024.08.28</td><td>4</td><td><input type="checkbox" id="day-20240828"></td></tr>
-        <tr class="week4"><td>2024.08.29</td><td>4</td><td><input type="checkbox" id="day-20240829"></td></tr>
-        <tr class="week4"><td>2024.08.30</td><td>4</td><td><input type="checkbox" id="day-20240830"></td></tr>
-        <tr class="week4"><td>2024.08.31</td><td>4</td><td><input type="checkbox" id="day-20240831"></td></tr>
-        <tr class="week4"><td>2024.09.01</td><td>4</td><td><input type="checkbox" id="day-20240901"></td></tr>
-        <tr class="week4"><td>2024.09.02</td><td>4</td><td><input type="checkbox" id="day-20240902"></td></tr>
-        <tr class="week4"><td>2024.09.03</td><td>4</td><td><input type="checkbox" id="day-20240903"></td></tr>
+        <tr class="week4"><td>2024.08.28</td><td>5</td><td><input type="checkbox" id="day-20240828"></td></tr>
+        <tr class="week4"><td>2024.08.29</td><td>5</td><td><input type="checkbox" id="day-20240829"></td></tr>
+        <tr class="week4"><td>2024.08.30</td><td>5</td><td><input type="checkbox" id="day-20240830"></td></tr>
+        <tr class="week4"><td>2024.08.31</td><td>5</td><td><input type="checkbox" id="day-20240831"></td></tr>
+        <tr class="week4"><td>2024.09.01</td><td>5</td><td><input type="checkbox" id="day-20240901"></td></tr>
+        <tr class="week4"><td>2024.09.02</td><td>5</td><td><input type="checkbox" id="day-20240902"></td></tr>
+        <tr class="week4"><td>2024.09.03</td><td>5</td><td><input type="checkbox" id="day-20240903"></td></tr>
 
         <!-- Week 5: 2024.09.04 - 2024.09.10 -->
-        <tr class="week5"><td>2024.09.04</td><td>3</td><td><input type="checkbox" id="day-20240904"></td></tr>
-        <tr class="week5"><td>2024.09.05</td><td>3</td><td><input type="checkbox" id="day-20240905"></td></tr>
-        <tr class="week5"><td>2024.09.06</td><td>3</td><td><input type="checkbox" id="day-20240906"></td></tr>
-        <tr class="week5"><td>2024.09.07</td><td>3</td><td><input type="checkbox" id="day-20240907"></td></tr>
-        <tr class="week5"><td>2024.09.08</td><td>3</td><td><input type="checkbox" id="day-20240908"></td></tr>
-        <tr class="week5"><td>2024.09.09</td><td>3</td><td><input type="checkbox" id="day-20240909"></td></tr>
-        <tr class="week5"><td>2024.09.10</td><td>3</td><td><input type="checkbox" id="day-20240910"></td></tr>
+        <tr class="week5"><td>2024.09.04</td><td>4</td><td><input type="checkbox" id="day-20240904"></td></tr>
+        <tr class="week5"><td>2024.09.05</td><td>4</td><td><input type="checkbox" id="day-20240905"></td></tr>
+        <tr class="week5"><td>2024.09.06</td><td>4</td><td><input type="checkbox" id="day-20240906"></td></tr>
+        <tr class="week5"><td>2024.09.07</td><td>4</td><td><input type="checkbox" id="day-20240907"></td></tr>
+        <tr class="week5"><td>2024.09.08</td><td>4</td><td><input type="checkbox" id="day-20240908"></td></tr>
+        <tr class="week5"><td>2024.09.09</td><td>4</td><td><input type="checkbox" id="day-20240909"></td></tr>
+        <tr class="week5"><td>2024.09.10</td><td>4</td><td><input type="checkbox" id="day-20240910"></td></tr>
 
         <!-- Week 6: 2024.09.11 - 2024.09.17 -->
-        <tr class="week6"><td>2024.09.11</td><td>2</td><td><input type="checkbox" id="day-20240911"></td></tr>
-        <tr class="week6"><td>2024.09.12</td><td>2</td><td><input type="checkbox" id="day-20240912"></td></tr>
-        <tr class="week6"><td>2024.09.13</td><td>2</td><td><input type="checkbox" id="day-20240913"></td></tr>
-        <tr class="week6"><td>2024.09.14</td><td>2</td><td><input type="checkbox" id="day-20240914"></td></tr>
-        <tr class="week6"><td>2024.09.15</td><td>2</td><td><input type="checkbox" id="day-20240915"></td></tr>
-        <tr class="week6"><td>2024.09.16</td><td>2</td><td><input type="checkbox" id="day-20240916"></td></tr>
-        <tr class="week6"><td>2024.09.17</td><td>2</td><td><input type="checkbox" id="day-20240917"></td></tr>
+        <tr class="week6"><td>2024.09.11</td><td>3</td><td><input type="checkbox" id="day-20240911"></td></tr>
+        <tr class="week6"><td>2024.09.12</td><td>3</td><td><input type="checkbox" id="day-20240912"></td></tr>
+        <tr class="week6"><td>2024.09.13</td><td>3</td><td><input type="checkbox" id="day-20240913"></td></tr>
+        <tr class="week6"><td>2024.09.14</td><td>3</td><td><input type="checkbox" id="day-20240914"></td></tr>
+        <tr class="week6"><td>2024.09.15</td><td>3</td><td><input type="checkbox" id="day-20240915"></td></tr>
+        <tr class="week6"><td>2024.09.16</td><td>3</td><td><input type="checkbox" id="day-20240916"></td></tr>
+        <tr class="week6"><td>2024.09.17</td><td>3</td><td><input type="checkbox" id="day-20240917"></td></tr>
 
         <!-- Week 7: 2024.09.18 - 2024.09.24 -->
-        <tr class="week7"><td>2024.09.18</td><td>1</td><td><input type="checkbox" id="day-20240918"></td></tr>
-        <tr class="week7"><td>2024.09.19</td><td>1</td><td><input type="checkbox" id="day-20240919"></td></tr>
-        <tr class="week7"><td>2024.09.20</td><td>1</td><td><input type="checkbox" id="day-20240920"></td></tr>
-        <tr class="week7"><td>2024.09.21</td><td>1</td><td><input type="checkbox" id="day-20240921"></td></tr>
-        <tr class="week7"><td>2024.09.22</td><td>1</td><td><input type="checkbox" id="day-20240922"></td></tr>
-        <tr class="week7"><td>2024.09.23</td><td>1</td><td><input type="checkbox" id="day-20240923"></td></tr>
-        <tr class="week7"><td>2024.09.24</td><td>1</td><td><input type="checkbox" id="day-20240924"></td></tr>
+        <tr class="week7"><td>2024.09.18</td><td>2</td><td><input type="checkbox" id="day-20240918"></td></tr>
+        <tr class="week7"><td>2024.09.19</td><td>2</td><td><input type="checkbox" id="day-20240919"></td></tr>
+        <tr class="week7"><td>2024.09.20</td><td>2</td><td><input type="checkbox" id="day-20240920"></td></tr>
+        <tr class="week7"><td>2024.09.21</td><td>2</td><td><input type="checkbox" id="day-20240921"></td></tr>
+        <tr class="week7"><td>2024.09.22</td><td>2</td><td><input type="checkbox" id="day-20240922"></td></tr>
+        <tr class="week7"><td>2024.09.23</td><td>2</td><td><input type="checkbox" id="day-20240923"></td></tr>
+        <tr class="week7"><td>2024.09.24</td><td>2</td><td><input type="checkbox" id="day-20240924"></td></tr>
 
         <!-- Week 8: 2024.09.25 - 2024.10.01 -->
-        <tr class="week1"><td>2024.09.25</td><td>0.5</td><td><input type="checkbox" id="day-20240925"></td></tr>
-        <tr class="week1"><td>2024.09.26</td><td>0.5</td><td><input type="checkbox" id="day-20240926"></td></tr>
-        <tr class="week1"><td>2024.09.27</td><td>0.5</td><td><input type="checkbox" id="day-20240927"></td></tr>
-        <tr class="week1"><td>2024.09.28</td><td>0.5</td><td><input type="checkbox" id="day-20240928"></td></tr>
-        <tr class="week1"><td>2024.09.29</td><td>0.5</td><td><input type="checkbox" id="day-20240929"></td></tr>
-        <tr class="week1"><td>2024.09.30</td><td>0.5</td><td><input type="checkbox" id="day-20240930"></td></tr>
-        <tr class="week1"><td>2024.10.01</td><td>0.5</td><td><input type="checkbox" id="day-20241001"></td></tr>
-        
+        <tr class="week8"><td>2024.09.25</td><td>1</td><td><input type="checkbox" id="day-20240925"></td></tr>
+        <tr class="week8"><td>2024.09.26</td><td>1</td><td><input type="checkbox" id="day-20240926"></td></tr>
+        <tr class="week8"><td>2024.09.27</td><td>1</td><td><input type="checkbox" id="day-20240927"></td></tr>
+        <tr class="week8"><td>2024.09.28</td><td>1</td><td><input type="checkbox" id="day-20240928"></td></tr>
+        <tr class="week8"><td>2024.09.29</td><td>1</td><td><input type="checkbox" id="day-20240929"></td></tr>
+        <tr class="week8"><td>2024.09.30</td><td>1</td><td><input type="checkbox" id="day-20240930"></td></tr>
+        <tr class="week8"><td>2024.10.01</td><td>1</td><td><input type="checkbox" id="day-20241001"></td></tr>
+
+        <!-- Week 9: 2024.10.02 - 2024.10.08 -->
+        <tr class="week9"><td>2024.10.02</td><td>0.5</td><td><input type="checkbox" id="day-20241002"></td></tr>
+        <tr class="week9"><td>2024.10.03</td><td>0.5</td><td><input type="checkbox" id="day-20241003"></td></tr>
+        <tr class="week9"><td>2024.10.04</td><td>0.5</td><td><input type="checkbox" id="day-20241004"></td></tr>
+        <tr class="week9"><td>2024.10.05</td><td>0.5</td><td><input type="checkbox" id="day-20241005"></td></tr>
+        <tr class="week9"><td>2024.10.06</td><td>0.5</td><td><input type="checkbox" id="day-20241006"></td></tr>
+        <tr class="week9"><td>2024.10.07</td><td>0.5</td><td><input type="checkbox" id="day-20241007"></td></tr>
+        <tr class="week9"><td>2024.10.08</td><td>0.5</td><td><input type="checkbox" id="day-20241008"></td></tr>
     </table>
-
-    <script>
-        // Function to save the checkbox state
-        function saveCheckboxState(id) {
-            const checkbox = document.getElementById(id);
-            localStorage.setItem(id, checkbox.checked);
-        }
-
-        // Function to load the checkbox state
-        function loadCheckboxState(id) {
-            const checkbox = document.getElementById(id);
-            const checked = localStorage.getItem(id) === 'true';
-            checkbox.checked = checked;
-        }
-
-        // Apply to all checkboxes
-        document.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
-            const id = checkbox.id;
-            loadCheckboxState(id);
-            checkbox.addEventListener('change', () => saveCheckboxState(id));
-        });
-    </script>
 </body>
+<script>
+    // Function to save the checkbox state
+    function saveCheckboxState(id) {
+        const checkbox = document.getElementById(id);
+        localStorage.setItem(id, checkbox.checked);
+    }
+
+    // Function to load the checkbox state
+    function loadCheckboxState(id) {
+        const checkbox = document.getElementById(id);
+        const checked = localStorage.getItem(id) === 'true';
+        checkbox.checked = checked;
+    }
+
+    // Apply to all checkboxes
+    document.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
+        const id = checkbox.id;
+        loadCheckboxState(id);
+        checkbox.addEventListener('change', () => saveCheckboxState(id));
+    });
+</script>
 </html>
