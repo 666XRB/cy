@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>药物递减日历</title>
+    <title>药历</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -37,11 +37,12 @@
 </head>
 <body>
     <h1>药历</h1>
+    <p id="current-date-time" style="font-size: 30px; font-weight: 700;">Today: </p>
     <table>
         <tr>
             <th>日期</th>
-            <th>药片数量</th>
-            <th>完成</th>
+            <th>药物数量</th>
+            <th>完成情况</th>
         </tr>
 
         <!-- Week 1: 2024.08.07 - 2024.08.13 -->
@@ -146,5 +147,69 @@
         loadCheckboxState(id);
         checkbox.addEventListener('change', () => saveCheckboxState(id));
     });
+
+
+// Function to handle checkbox change event
+function handleCheckboxChange(event) {
+    const checkbox = event.target;
+    const isChecked = checkbox.checked;
+
+    if (isChecked) {
+        // If checkbox is checked, confirm if the medicine has been taken
+        const confirmTaken = confirm("今天吃过药了嘛？");
+        if (!confirmTaken) {
+            // User canceled, uncheck the checkbox
+            checkbox.checked = false;
+            return;
+        }
+    } else {
+        // If checkbox is unchecked, confirm if it was a mistake
+        const confirmMistake = confirm("真的要取消吗？");
+        if (!confirmMistake) {
+            // User canceled, recheck the checkbox
+            checkbox.checked = true;
+            return;
+        }
+    }
+
+    // Save the checkbox state if confirmed
+    saveCheckboxState(checkbox.id);
+}
+
+// Function to save the checkbox state
+function saveCheckboxState(id) {
+    const checkbox = document.getElementById(id);
+    localStorage.setItem(id, checkbox.checked);
+}
+
+// Function to load the checkbox state
+function loadCheckboxState(id) {
+    const checkbox = document.getElementById(id);
+    const checked = localStorage.getItem(id) === 'true';
+    checkbox.checked = checked;
+}
+
+// Function to update the current date and time
+function updateDateTime() {
+    const now = new Date();
+    const options = { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit' };
+    const formattedDate = now.toLocaleString('zh-CN', options);
+    document.getElementById('current-date-time').textContent = `Today: ${formattedDate}`;
+}
+
+// Apply to all checkboxes
+document.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
+    const id = checkbox.id;
+    loadCheckboxState(id);
+    checkbox.addEventListener('change', handleCheckboxChange);
+});
+
+// Update date and time on page load
+window.onload = updateDateTime;
+
+// Optionally, update date and time every second (if needed)
+setInterval(updateDateTime, 1000);
+
+
 </script>
 </html>
